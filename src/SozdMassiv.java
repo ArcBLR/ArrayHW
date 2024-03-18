@@ -1,8 +1,4 @@
-import jdk.incubator.vector.VectorOperators;
-
 import java.util.Random;
-
-import static java.util.Arrays.binarySearch;
 
 public class SozdMassiv {
     public static void main(String[] args) {
@@ -12,7 +8,7 @@ public class SozdMassiv {
         }
         Random random = new Random();
         int randomint = random.nextInt(1000000, 2000000);
-        System.out.println(randomint);
-        System.out.printf("Случайный элемент - %d%n", binarySearch(massiv,randomint,0,massiv.length-1));
+        System.out.println("Случайное число: " + randomint);
+        System.out.printf("Индекс случайного числа: " + SearchBinary.searchBinary(massiv, randomint, 0, massiv.length - 1));
     }
 }
