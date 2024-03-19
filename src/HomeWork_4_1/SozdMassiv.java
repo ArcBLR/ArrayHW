@@ -1,7 +1,5 @@
 package HomeWork_4_1;
 
-import HomeWork_4_1.SearchBinary;
-
 import java.util.Random;
 
 public class SozdMassiv {
