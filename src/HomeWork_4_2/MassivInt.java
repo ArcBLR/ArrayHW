@@ -1,26 +1,28 @@
 package HomeWork_4_2;
 
-import java.time.Duration;
-import java.time.Instant;
-import java.util.Random;
+import java.util.Arrays;
 
-public class MassivInt {
+public class MassivInt{
     public static void main(String[] args) {
-        Instant start=Instant.now();
         int[] massivint = new int[100_000];
-        for (int i = 0; i < massivint.length; i++) {
-//            Random random = new Random();
-//            int randint = random.nextInt(1, 1000000);
-//            massivint[i] = randint;
-            massivint[i] = (int) (Math.random()*1000000);
-            System.out.println(massivint[i]);
-            sort.Bubble(massivint);
-
-
-            Instant finish =Instant.now();
-            Long elapsedTime= Duration.between(start,finish).toSeconds();
-            System.err.println("\n"+elapsedTime);
+        for (int j = 0; j < massivint.length; j++) {
+            massivint[j] = (int) (Math.random() * 1000000);
         }
+        boolean isSorted = false;
+        int buffers;
+        while (!isSorted) {
+            isSorted = true;
+            for (int i = 0; i < massivint.length - 1; i++) {
+                if (massivint[i] > massivint[i + 1]) {
+                    isSorted = false;
 
+                    buffers = massivint[i];
+                    massivint[i] = massivint[i + 1];
+                    massivint[i + 1] = buffers;
+
+                }
+            }
+        }
+        System.out.println(Arrays.toString(massivint));
     }
 }
