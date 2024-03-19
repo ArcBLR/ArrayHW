@@ -7,7 +7,7 @@ public class SearchBinary {
             if (massiv[mid] < randomint) {
                 low = mid + 1;
             } else if (massiv[mid] > randomint) {
-                high = mid - 1;
+                high = mid-1;
             } else if (massiv[mid] == randomint) {
                 index = mid;
                 break;
