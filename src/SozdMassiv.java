@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Random;
 
 public class SozdMassiv {
@@ -10,7 +9,6 @@ public class SozdMassiv {
         Random random = new Random();
         int randomint = random.nextInt(1000000, 2000000);
         System.out.println("Случайное число: " + randomint);
-//        System.out.println("Индекс случайного числа: " + Arrays.binarySearch(massiv,randomint));
         System.out.printf("Индекс случайного числа: " +
                 SearchBinary.searchBinary(massiv, randomint, 0, massiv.length - 1));
     }
