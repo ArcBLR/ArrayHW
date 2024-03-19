@@ -1,3 +1,5 @@
+package HomeWork_4_1;
+
 public class SearchBinary {
     static int searchBinary(int[] massiv, int randomint, int low, int high) {
         int index = -1;
