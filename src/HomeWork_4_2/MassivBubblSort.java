@@ -1,6 +1,5 @@
 package HomeWork_4_2;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class MassivBubblSort {
