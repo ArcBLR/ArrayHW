@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class ListLinked {
     public static void main(String[] args) {
         LinkedList<String> linkedList = new LinkedList<>();
-//        int linkedSize = linkedList.size();
 
         Scanner scanner = new Scanner(System.in);
         for (int i = 1; i < i + 2 & i > 0; i++) {
@@ -40,7 +39,7 @@ public class ListLinked {
 
         System.out.println("Удаляем весь массив");
 
-           for (int i=linkedList.size();i<0;){
+           for (int i=0;i<linkedList.size();){
             linkedList.remove();
 
         }
