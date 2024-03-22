@@ -6,7 +6,6 @@ import java.util.Scanner;
 public class ListLinked {
     public static void main(String[] args) {
         LinkedList<String> linkedList = new LinkedList<>();
-
         Scanner scanner = new Scanner(System.in);
         for (int i = 1; i < i + 2 & i > 0; i++) {
             System.out.println("Введите элемент для добавления в лист (если ввести \"stop\" ввод будет остановлен: ");

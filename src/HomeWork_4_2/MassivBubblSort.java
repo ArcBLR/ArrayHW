@@ -5,11 +5,9 @@ import java.util.Scanner;
 public class MassivBubblSort {
     public static void main(String[] args) {
         int[] massivBS = new int[100_000];
-
         for (int j = 0; j < massivBS.length; j++) {
             massivBS[j] = (int) (Math.random() * 1000000);
         }
-
         boolean isSorted = false;
         int buffers;
         while (!isSorted) {
@@ -21,11 +19,9 @@ public class MassivBubblSort {
                     buffers = massivBS[i];
                     massivBS[i] = massivBS[i + 1];
                     massivBS[i + 1] = buffers;
-
                 }
             }
         }
-
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите два числа разделенные пробелом: ");
         String next = scanner.nextLine();
