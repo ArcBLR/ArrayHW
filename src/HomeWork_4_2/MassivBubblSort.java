@@ -8,20 +8,7 @@ public class MassivBubblSort {
         for (int j = 0; j < massivBS.length; j++) {
             massivBS[j] = (int) (Math.random() * 1000000);
         }
-        boolean isSorted = false;
-        int buffers;
-        while (!isSorted) {
-            isSorted = true;
-            for (int i = 0; i < massivBS.length - 1; i++) {
-                if (massivBS[i] > massivBS[i + 1]) {
-                    isSorted = false;
-
-                    buffers = massivBS[i];
-                    massivBS[i] = massivBS[i + 1];
-                    massivBS[i + 1] = buffers;
-                }
-            }
-        }
+        BubbleSort.bubbleSort(massivBS);
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите два числа разделенные пробелом: ");
         String next = scanner.nextLine();
