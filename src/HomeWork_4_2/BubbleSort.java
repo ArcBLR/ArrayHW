@@ -1,19 +1,19 @@
 package HomeWork_4_2;
 
 public class BubbleSort {
-    static void bubbleSort(int[] massivBS) {
+    static void bubbleSort(int[] massiveBS) {
 
         boolean isSorted = false;
         int buffers;
         while (!isSorted) {
             isSorted = true;
-            for (int i = 0; i < massivBS.length - 1; i++) {
-                if (massivBS[i] > massivBS[i + 1]) {
+            for (int i = 0; i < massiveBS.length - 1; i++) {
+                if (massiveBS[i] > massiveBS[i + 1]) {
                     isSorted = false;
 
-                    buffers = massivBS[i];
-                    massivBS[i] = massivBS[i + 1];
-                    massivBS[i + 1] = buffers;
+                    buffers = massiveBS[i];
+                    massiveBS[i] = massiveBS[i + 1];
+                    massiveBS[i + 1] = buffers;
                 }
             }
         }
