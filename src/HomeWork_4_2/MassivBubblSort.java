@@ -3,7 +3,7 @@ package HomeWork_4_2;
 import java.util.Scanner;
 
 
-public class MassivBubblSort extends BubbleSort{
+public class MassivBubblSort {
     public static void main(String[] args) {
         int[] massivBS = new int[100_000];
         for (int j = 0; j < massivBS.length; j++) {
