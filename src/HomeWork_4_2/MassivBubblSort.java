@@ -15,6 +15,7 @@ public class MassivBubblSort {
             for (int i = 0; i < massivBS.length - 1; i++) {
                 if (massivBS[i] > massivBS[i + 1]) {
                     isSorted = false;
+
                     buffers = massivBS[i];
                     massivBS[i] = massivBS[i + 1];
                     massivBS[i + 1] = buffers;
