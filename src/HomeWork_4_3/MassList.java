@@ -16,8 +16,12 @@ public class MassList<E> {
     }
 
     public void add(E element) {
-        ensureCapacity(size + 1);
-        data[size++] = element;
+        if (data.length > size-1) {
+            ensureCapacity(size + 1);
+            data[size++] = element;
+        } else {
+            data[size++] = element;
+        }
     }
 
     private void ensureCapacity(int minCapacity) {
@@ -50,7 +54,7 @@ public class MassList<E> {
         return (E) data[index];
     }
 
-    public E remove(int index) {
+        public E remove(int index) {
         Objects.checkIndex(index, size);
         @SuppressWarnings("unchecked") E oldValue = (E) data[index];
         fastRemove(data, index);
@@ -69,4 +73,3 @@ public class MassList<E> {
             data[i] = null;
     }
 }
-

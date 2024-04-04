@@ -15,7 +15,7 @@ public class MyArrayList {
         }
         System.out.println(ds + list.size());
 
-        System.out.println("Добавлякм массив \"newMassive\" к нашему списку");
+        System.out.println("Добавлям массив \"newMassive\" к нашему списку");
         for (int i = 0; i < newMassive.length; i++) {
             list.add(newMassive[i]);
         }
